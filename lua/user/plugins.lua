@@ -53,15 +53,14 @@ return packer.startup(function(use)
 	use({ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" })
 	use({ "nvim-lualine/lualine.nvim", commit = "3362b28f917acc37538b1047f187ff1b5645ecdd" })
 	use({ "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" })
-	use({ "ahmedkhalf/project.nvim", commit = "541115e762764bc44d7d3bf501b6e367842d3d4f" })
 	use({ "lewis6991/impatient.nvim", commit = "969f2c5c90457612c09cf2a13fee1adaa986d350" })
 	use({ "lukas-reineke/indent-blankline.nvim", commit = "6177a59552e35dfb69e1493fd68194e673dc3ee2" })
-	use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
 	use("folke/which-key.nvim")
 
 	-- Colorschemes
 	use({ "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" })
 	use("lunarvim/darkplus.nvim")
+  use "pineapplegiant/spaceduck"
 
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" }) -- The completion plugin
@@ -74,6 +73,9 @@ return packer.startup(function(use)
 	-- snippets
 	use({ "L3MON4D3/LuaSnip", commit = "79b2019c68a2ff5ae4d732d50746c901dd45603a" }) --snippet engine
 	use({ "rafamadriz/friendly-snippets", commit = "d27a83a363e61009278b6598703a763ce9c8e617" }) -- a bunch of snippets to use
+
+  -- vim sneak
+  use "justinmk/vim-sneak"
 
 	-- LSP
 	use({ "neovim/nvim-lspconfig", commit = "148c99bd09b44cf3605151a06869f6b4d4c24455" }) -- enable LSP
@@ -91,6 +93,9 @@ return packer.startup(function(use)
 
 	-- Git
 	use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
+
+  -- profile vim startup time :StartupTime 
+  use "dstein64/vim-startuptime"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

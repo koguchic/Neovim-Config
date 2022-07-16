@@ -25,6 +25,12 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- ThePrimeagen keymaps
+keymap("n", "Y", "y$", opts)
+keymap("n", "J", "mzJz`v", opts)
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzzv", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -60,6 +66,8 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
+keymap("n", "gd", "<cmd>Telescope lsp_definitions<cr>", opts)
+keymap("n", "gr", "<cmd>Telescope lsp_references<cr>", opts)
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
