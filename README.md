@@ -1,14 +1,19 @@
-# Neovim from scratch
+# Koguchi's Neovim Config
 
-**Important Update** When I initially created this repo I didn't anticipate the amount of breaking changes, if you'd like to use the same basic config as this one as a base I recommend my new repo: [nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide)
-
-**Another Update** This repo should work fine with Neovim 0.8, also all packages are pinned so it should remain stable.
-
-Each video will be associated with a branch so checkout the one you are interested in, you can follow along with this [playlist](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ).
+This config is forked from Neovim-from-scratch by LunarVim.  It contains many plugins and default keymaps/options that enable Neovim to have a full IDE experience.
 
 ## Try out this config
 
 Make sure to remove or move your current `nvim` directory
+
+### Installing Neovim
+
+I find installing using the AppImage the easiest.  For some reason using apt-get was giving me the wrong version of Neovim. 
+```
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+sudo mv nvim.appimage /usr/local/bin/nvim
+```
 
 **IMPORTANT** Requires [Neovim v0.8.0]](https://github.com/neovim/neovim/releases).  [Upgrade](#upgrade-to-latest-release) if you're on an earlier version. 
 ```
@@ -27,52 +32,7 @@ Open `nvim` and enter the following:
 :checkhealth
 ```
 
-You'll probably notice you don't have support for copy/paste also that python and node haven't been setup
-
-So let's fix that
-
-First we'll fix copy/paste
-
-- On mac `pbcopy` should be builtin
-
-- On Ubuntu
-
-  ```
-  sudo apt install xsel
-  ```
-
-- On Arch Linux
-
-  ```
-  sudo pacman -S xsel
-  ```
-
-Next we need to install python support (node is optional)
-
-- Neovim python support
-
-  ```
-  pip install pynvim
-  ```
-
-- Neovim node support
-
-  ```
-  npm i -g neovim
-  ```
 ---
-
-**NOTE** make sure you have [node](https://nodejs.org/en/) installed, I recommend a node manager like [fnm](https://github.com/Schniz/fnm).
-
-### Upgrade to latest release
-
-Assuming you [built from source](https://github.com/neovim/neovim/wiki/Building-Neovim#quick-start), `cd` into the folder where you cloned `neovim` and run the following commands. 
-```
-git pull
-make distclean && make CMAKE_BUILD_TYPE=Release
-sudo make install
-nvim -v
-```
 
 > The computing scientist's main challenge is not to get confused by the complexities of his own making. 
 
