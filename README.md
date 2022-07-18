@@ -11,6 +11,7 @@ Make sure to remove or move your current `nvim` directory
 I find installing using the AppImage the easiest.  For some reason using apt-get was giving me the wrong version of Neovim. 
 ```
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 ```
