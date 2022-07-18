@@ -89,9 +89,9 @@ local mappings = {
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["f"] = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-    "Find files",
+    "Find Files",
   },
-  ["g"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+  ["g"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text using grep" },
   ["t"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Terminal" },
   p = {
     name = "Packer",
