@@ -91,7 +91,8 @@ local mappings = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Find files",
   },
-  ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+  ["g"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+  ["t"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Terminal" },
   p = {
     name = "Packer",
     c = { "<cmd>PackerCompile<cr>", "Compile" },
@@ -99,16 +100,6 @@ local mappings = {
     s = { "<cmd>PackerSync<cr>", "Sync" },
     S = { "<cmd>PackerStatus<cr>", "Status" },
     u = { "<cmd>PackerUpdate<cr>", "Update" },
-  },
-  t = {
-    name = "Terminal",
-    -- n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
-    -- u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
-    -- p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
-    t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
-    f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-    h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
-    v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
 }
 
