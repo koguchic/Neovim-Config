@@ -25,6 +25,16 @@ Run `nvim` and wait for the plugins to be installed
 
 **NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
 
+## How to get Icons
+Download them from NerdFont.  One way I found to work:
+
+1. Go to https://www.nerdfonts.com/font-downloads
+2. Download "Caskaydia Cove Nerd Font"
+3. Install Caskaydia Cove Nerd Font Complete (using the ttf file)
+4. Go to Settings in your Terminal and select Caskaydia Cove
+5. Restart your Terminal
+
+
 ## Get healthy
 
 Open `nvim` and enter the following:
