@@ -31,6 +31,7 @@ keymap("n", "J", "mzJz`v", opts)
 keymap("n", "n", "nzzzv", opts)
 keymap("n", "N", "Nzzzv", opts)
 
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -48,6 +49,9 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Insert --
 -- Press jk fast to exit insert mode 
 keymap("i", "jk", "<ESC>", opts)
+
+-- Ctrl-Backspace to delete a whole word
+keymap("i", "<C-h>", "<C-w>", opts)
 
 -- Visual --
 -- Stay in indent mode
